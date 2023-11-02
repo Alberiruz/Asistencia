@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>Planilla de Asistencia</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Planilla de Asistencia de Alumnos</h1>
+        
+        <!-- Selección de Fecha -->
+        <div class="date-selection">
+            <label for="fecha" class="button-style">Fecha:</label>
+            <input type="date" id="fecha" class="button-style" value="2023-10-29">
+        </div>
+        
+        <!-- Selección de Curso -->
+        <div class="course-selection" style="text-align: center;">
+            <label for "curso" class="button-style">Curso:</label>
+            <select id="curso" class="button-style">
+                <option style="text-align: center;" value="1A">1A</option>
+                <option style="text-align: center;" value="1B">1B</option>
+                <option style="text-align: center;" value="2A">2A</option>
+                <option style="text-align: center;" value="2B">2B</option>
+                <option style="text-align: center;" value="3A">3A</option>
+                <option style="text-align: center;" value="4A">4A</option>
+                <option style="text-align: center;" value="5A">5A</option>
+            </select>
+        </div>
+
+        <!-- Resto del contenido -->
+        <div class="alumno-container">
+            <img class="alumno-photo" src="78184848-ilustración-de-vector-de-estudiante-de-cara-de-dibujos-animados-divertido-chica.jpg" alt="Foto del Alumno 1">
+            <h3 id="nombre-alumno">Gambal</h3>
+            <div class="alumno-options">
+                <button onclick="marcarEstado('Presente')">Presente</button>
+                <button onclick="marcarEstado('Ausente')">Ausente</button>
+                <button onclick="marcarEstado('Tarde')">Tarde</button>
+            </div>
+        </div>
+
+        <div class="carga-completa">
+            <h2>Carga Completa</h2>
+            <p>Todos los alumnos han sido registrados.</p>
+            <button onclick="mostrarResultado()">Mostrar Resultado</button>
+        </div>
+
+        <div class="resultado">
+            <h2>Resultado de la Asistencia</h2>
+            <ul id="resultado-lista"></ul>
+            <button id="limpiar" onclick="limpiarTodo()">Limpiar Todo</button>
+        </div>
+    </div>
+    
+    <script src="java.js"></script>
+</body>
+</html>

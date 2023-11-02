@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.alumno-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.alumno-photo {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #333;
+    border-radius: 50%;
+}
+
+.alumno-options {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.carga-completa {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.resultado {
+    display: none;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+    color: #333;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Estilos para campos de entrada de texto y select sin color de fondo */
+input[type="date"], select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    width: 25%; /* Reducimos el ancho al 25% del contenedor */
+    margin-bottom: 10px;
+    background: none;
+}
+
+/* Estilos para botones y resultado */
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    }
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+/* Estilo para el contenido de los campos */
+input[type="date"]::-webkit-input-placeholder, select {
+    color: #4CAF50;
+}
+
+/* Estilo para el desplegable de curso */
+select {
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+
+select:hover {
+    border-color: #4CAF50;
+}
+
+/* Estilo para el texto del desplegable de curso */
+select option {
+    background-color: #4CAF50;
+    color: #fff;
+}
+.course-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+li.estado-resultado {
+    color: red;
+}
